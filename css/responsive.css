@@ -1,0 +1,42 @@
+@media only screen and (max-width: 1399px){
+    .skills{
+        justify-content: center;
+        column-gap: 6px;
+    }
+
+    .hero .hero-text{
+        margin-top: 120px;
+    }
+
+    .hero .hero-img img{
+        width: 550px;
+    }
+
+    .about{
+        margin-top: 130px;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    #particles-js{
+        height: 1200px;
+    }
+
+    .hero{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero .hero-text{
+        align-self: flex-start;
+        margin-top: 60px;
+    }
+
+    .hero .hero-img{
+        margin-top: 70px;
+    }
+
+    .about{
+        margin-top: 130px;
+    }
+}

@@ -1,0 +1,265 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+@font-face {
+  font-family: font1;
+  src: url(../fonts/ttf/Unageo-Bold.ttf);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(../fonts/ttf/Unageo-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: font3;
+  src: url(../fonts/ttf/Unageo-Bold.ttf);
+}
+
+html,body{ 
+	background:#fff;
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas{
+  display:block;
+}
+
+#particles-js{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 10px;
+  background-color: #fff;
+  padding: 0px 15px;
+  border-radius: 50px;
+  box-shadow: 1px 1px 4px#000;
+  height: 70px;
+  font-family: font2;
+}
+
+.nav-bar .links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 50px;
+}
+
+.nav-bar .links li{
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: 0;
+}
+
+.nav-bar .links li a{
+  color: #000;
+  position: relative;
+}
+
+.nav-bar .links li a::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #1ebbd7;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: all .3s ease;
+  bottom: -4px;
+  left: 0;
+}
+
+.nav-bar .links li a:hover::before {
+  transform: scaleX(1);
+}
+
+.nav-bar .logo a{
+  font-family: font3;
+  color: #000;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 10px;
+  color: #000;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-bar .logo a:hover{
+  color: #ff7b00;
+}
+
+.hero{
+  justify-content: space-between;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  font-family: font1;
+}
+
+.hero .hero-img{
+  margin-top: 20px;
+}
+
+.hero .hero-text{
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+}
+
+.hero .hero-text h1{
+  color: #002057;
+  font-size: 60px;
+  padding-bottom: 15px;
+}
+
+.hero .hero-text h1 span{
+  color: #ff7b00;
+}
+
+.hero .hero-text h2{
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.hero .hero-text h2 span{
+  color: #a02424;
+}
+
+.hero .hero-text .about-btn{
+  width: 140px;
+  border: none;
+  border-radius: 50px;
+  background-color: #2506ad;
+  padding: 10px 15px;
+  font-size: 17px;
+  margin-top: 12px;
+  box-shadow: 0px 0px 6px #2506ad;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero .hero-text .about-btn a{
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.hero .hero-text .about-btn a:hover{
+  color: #2506ad;
+}
+
+.hero .hero-text .about-btn:hover{
+  background-color: transparent;
+}
+
+.about{
+  margin-top: 80px;
+  height: 100vh;
+}
+
+.about h1{
+  text-align: center;
+  font-size: 60px;
+  color: #202020;
+  font-family: font1;
+  padding-top: 50px;
+}
+
+.about h1 span{
+  color: #7303a7;
+}
+
+.about hr{
+  width: 100px;
+  border: none;
+  height: 3px;
+  background-color: #9f0be4;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.about p span{
+  color: #7303a7;
+}
+
+.about p{
+  padding-top: 70px;
+  color: #202020;
+  font-family: font3;
+  font-size: 25px;
+}
+
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 90px;
+  justify-content: space-between;
+}
+
+.skills .skill{
+  width: 308px;
+  margin-bottom: 100px;
+}
+
+.skills h1{
+  color: #002057;
+  padding-top: 30px;
+  font-size: 30px;
+}
+
+.skills p{
+  font-size: 17px;
+  padding-top: 0;
+  text-align: center;
+}
+
+.skills img{
+  margin-top: 20px;
+  display: block;
+  margin: auto;
+  width: 110px;
+  border-radius: 25px;
+  box-shadow: 15px -15px 4px #1a1f44;
+}

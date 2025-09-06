@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>particles.js</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div class="container" style="height: 100vh;">
+  <div class="nav-bar">
+    <h1 class="logo"><a href="index.html">karanovic</a></h1>
+    
+    <ul class="links">
+      <li><a href="#">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#">work</a></li>
+      <li><a href="#">contact</a></li>
+    </ul>
+  </div>
+
+  <div class="hero"> 
+    <div class="hero-text">
+      <h1>Hi There,<br>I'm <span>Vuk Karanović</span></h1>
+      <h2>I Am a <span>Web <span class="auto-type"></span></span></h2>
+      <button class="about-btn"><a href="#about">About Me</a></button>
+    </div>
+    <div class="hero-img">
+      <img src="images/logo.png" alt="">
+    </div>
+  </div>
+
+  <div class="about" id="about">
+    <h1>About <span>Me</span></h1>
+    <hr>
+    <p>
+      <span>Hi, I’m Vuk</span> — a beginner web designer and developer passionate about
+      creating modern and functional websites and web applications.
+      I enjoy exploring and learning new things in web design and programming,
+      and my goal is to keep improving my skills and grow into a professional
+      career in this field.<br><br>
+
+      I focus on creating simple yet effective representative websites
+      that combine a modern look with fast loading speed. These websites
+      are designed to clearly present a business, project, or individual
+      online in a professional way, without unnecessary complexity.
+      My goal is to make websites that are visually appealing,
+      easy to use, and optimized for smooth performance,
+      so they leave a strong first impression while
+      remaining practical and accessible.
+    </p>
+    <div class="skills">
+      <div class="skill">
+        <img src="images/fast.jpg" alt="">
+        <h1>Fast</h1>
+        <p>Fast load times and smooth interactivity are my top priority.</p>
+      </div>
+      <div class="skill">
+        <img src="images/creative.jpg" alt="">
+        <h1>Creative</h1>
+        <p>Creativity is at the heart of every page I design, bringing concepts to life online.</p>
+      </div>
+      <div class="skill">
+        <img src="images/responsive.jpg" alt="">
+        <h1>Responsive</h1>
+        <p>My layouts will work on any device, big or small.</p>
+      </div>
+      <div class="skill">
+        <img src="images/dynamic.jpg" alt="">
+        <h1>Dynamic</h1>
+        <p>Websites don't have to be static. I love making pages come to life.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+  var typed = new Typed(".auto-type",{
+    strings: ["Programmer", "Designer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+  })
+</script>
+
+<script src="particles.js"></script>
+<script src="js/app.js"></script>
+
+<script>
+  particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('particles.json loaded...');
+  });
+</script>
+
+<script src="js/lib/stats.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
