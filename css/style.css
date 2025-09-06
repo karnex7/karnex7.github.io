@@ -73,7 +73,7 @@ canvas{
   position: relative;
   top: 10px;
   background-color: #fff;
-  padding: 0px 15px;
+  padding: 0px 25px;
   border-radius: 50px;
   box-shadow: 1px 1px 4px#000;
   height: 70px;
@@ -118,7 +118,7 @@ canvas{
 .nav-bar .logo a{
   font-family: font3;
   color: #000;
-  font-size: 22px;
+  font-size: 23px;
   text-transform: uppercase;
   background-color: #fff;
   border-radius: 50px;
@@ -134,6 +134,7 @@ canvas{
 .hero{
   justify-content: space-between;
   position: relative;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
@@ -146,13 +147,13 @@ canvas{
 
 .hero .hero-text{
   display: flex;
-  margin-top: 100px;
+  margin-top: -70px;
   flex-direction: column;
 }
 
 .hero .hero-text h1{
   color: #002057;
-  font-size: 60px;
+  font-size: 70px;
   padding-bottom: 15px;
 }
 
@@ -161,7 +162,7 @@ canvas{
 }
 
 .hero .hero-text h2{
-  font-size: 30px;
+  font-size: 33px;
   padding-bottom: 15px;
 }
 
@@ -170,32 +171,26 @@ canvas{
 }
 
 .hero .hero-text .about-btn{
-  width: 140px;
+  text-align: center;
+  color: #fff;
+  width: 150px;
   border: none;
   border-radius: 50px;
   background-color: #2506ad;
-  padding: 10px 15px;
-  font-size: 17px;
+  padding: 15px 15px;
+  font-size: 19px;
   margin-top: 12px;
   box-shadow: 0px 0px 6px #2506ad;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.hero .hero-text .about-btn a{
-  color: #fff;
-  transition: color 0.3s ease-in-out;
-}
-
-.hero .hero-text .about-btn a:hover{
-  color: #2506ad;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .hero .hero-text .about-btn:hover{
+  color: #2506ad;
   background-color: transparent;
 }
 
 .about{
-  margin-top: 80px;
+  margin-top: 163px;
   height: 100vh;
 }
 
