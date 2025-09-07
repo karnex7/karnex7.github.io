@@ -30,6 +30,16 @@
     .projects{
         margin-top: 500px;
     }
+
+    .contact form .input-content{
+        width: 100%;
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+
+    .contact form .input-content .small-label input{
+        width: 300px;
+    }
 }
 
 @media only screen and (max-width: 1199px){
@@ -83,11 +93,19 @@
         justify-content: space-between;
         column-gap: 100px;
     }
+
+    .contact{
+        margin-top: 800px;
+    }
+
+    .contact form .input-content .small-label input{
+        width: 250px;
+    }
 }
 
 @media only screen and (max-width: 992px){
     .projects{
-        margin-top: 700px;
+        margin-top: 750px;
     }
 
     .projects .project-container .projects-card{
@@ -112,6 +130,14 @@
     .projects .project-container .projects-card .project-text h2{
         font-size: 40px;
     }
+
+    .contact{
+        margin-top: 1750px;
+    }
+
+    .contact form{
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -126,6 +152,14 @@
     #particles-js{
         height: 1220px;
     }
+
+    .contact{
+        margin-top: 1800px;
+    }
+
+    .contact form{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 576px){
@@ -139,17 +173,48 @@
     }
 
     #particles-js{
-        height: 1050px;
+        height: 1100px;
     }
 
     .about{
         margin-top: 20px;
+    }
+
+    .contact form{
+        margin-top: 50px;
+    }
+
+    .contact form .input-content{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact form .input-content .small-label label{
+        margin-top: 40px;
+    }
+
+    .contact form .input-content .small-label input{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 525px){
+    .contact{
+        margin-top: 1700px;
     }
 }
 
 @media only screen and (max-width: 489px){
     .projects{
         margin-top: 1550px;
+    }
+
+    .contact{
+        margin-top: 1650px;
+    }
+
+    .contact .contact-heading h2{
+        font-size: 30px;
     }
 }
 
@@ -200,6 +265,20 @@
     .projects{
         margin-top: 1850px;
     }
+
+    .contact{
+        margin-top: 1550px;
+    }
+
+    .contact .contact-heading h2{
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 364px){
+    .contact{
+        margin-top: 1650px;
+    }
 }
 
 @media only screen and (max-width: 356px){
@@ -211,6 +290,10 @@
 @media only screen and (max-width: 340px){
     .projects{
         margin-top: 1950px;
+    }
+
+    .contact{
+        margin-top: 1700px;
     }
 }
 

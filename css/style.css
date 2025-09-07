@@ -391,6 +391,7 @@ canvas{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  column-gap: 20px;
 }
 
 .contact form .input-content .small-label{
@@ -414,8 +415,8 @@ canvas{
 }
 
 .contact form .input-content .contact-inputs:focus{
-    outline: none;
-    border-bottom: 2px solid #0e43d4;
+  outline: none;
+  border-bottom: 2px solid #0e43d4;
 }
 
 .contact form textarea{
