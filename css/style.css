@@ -258,3 +258,95 @@ canvas{
   border-radius: 25px;
   box-shadow: 15px -15px 4px #1a1f44;
 }
+
+.projects{
+  height: 100vh;
+}
+
+.projects h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: font3;
+  font-size: 50px;
+  color: #202020;
+  padding-top: 10px;
+}
+
+.projects h4{
+  text-align: center;
+  color: #515050;
+  font-size: 16px;
+  font-family: font1;
+  text-transform: capitalize;
+}
+
+.projects .project-container{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+.projects .project-container .projects-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 150px;
+}
+
+.projects .project-container .projects-card #project-img{
+  width: 50%;
+  border-radius: 25px;
+  box-shadow: 2px 2px 8px #000;
+}
+
+.projects .project-container .projects-card .project-text{
+  margin-top: 40px;
+}
+
+.projects .project-container .projects-card .project-text #web-btn{
+  color: #fff;
+  background-color: #000;
+  padding: 15px 25px; 
+  border-radius: 35px;
+  text-transform: uppercase;
+  font-family: font1;
+  font-size: 16px;
+  border: 1px solid #000;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.projects .project-container .projects-card .project-text #web-btn:hover{
+  background-color: transparent;
+  color: #000;
+}
+
+.projects .project-container .projects-card .project-text h2{
+  color: #000;
+  font-family: font3;
+  font-size: 45px;
+  margin-top: 30px;
+  margin-bottom: 90px;
+  text-transform: capitalize;
+}
+
+.projects .project-container .projects-card .project-text #details{
+  text-transform: capitalize;
+  color: #000;
+  font-size: 22px;
+  font-family: font3;
+  border-bottom: 2px solid #000;
+  padding-bottom: 7px;
+}
+
+.projects .project-container .projects-card .project-text #details:hover img{
+  top: 7px;
+}
+
+.projects .project-container .projects-card .project-text #details img{
+  width: 30px;
+  position: relative;
+  top: 10px;
+  left: 3px;
+  transition: top 0.1s ease-in;
+}
